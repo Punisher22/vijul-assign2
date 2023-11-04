@@ -1,0 +1,12 @@
+<div>
+    <h2>Search Product Line</h2>
+    <p>Sales Records for Product Line: {{ productLine }}</p>
+    <ul>
+        {{#each foundSales}}
+            <li>
+                <p>InvoiceID: {{ InvoiceID }}</p>
+                <p>Unit Price: {{ unitPrice }}</p>
+            </li>
+        {{/each}}
+    </ul>
+</div>

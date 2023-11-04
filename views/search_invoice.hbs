@@ -1,0 +1,16 @@
+<div>
+    <h2>Search Invoice</h2>
+    <p>Details for InvoiceID: {{ invoiceID }}</p>
+    <ul>
+        {{#each foundSales}}
+            <li>
+                <p>Record {{ @index }}:</p>
+                <ul>
+                    {{#each this}}
+                        <li>{{ @key }}: {{ this }}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        {{/each}}
+    </ul>
+</div>

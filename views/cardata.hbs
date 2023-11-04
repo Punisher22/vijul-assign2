@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Car Data</title>
+    <style>
+        .highlight {
+            background-color: yellow; /* You can change the background color to your preference */
+        }
+    </style>
+</head>
+<body>
+    <h1>All Car Sales Data</h1>
+    <table>
+        <thead>
+            {{> tableheader}}
+        </thead>
+        <tbody>
+            {{#each carData}}
+                {{> tableRow}}
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
